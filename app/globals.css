@@ -22,7 +22,7 @@
   --destructive: #C41C3B;
   --destructive-foreground: #F5F2ED;
   --border: #D9D4CE;
-  --input: #F5F2ED;
+  --input: #D9D4CE;
   --ring: #C6A75E;
   --chart-1: #C6A75E;
   --chart-2: #B8AFA3;
@@ -59,7 +59,7 @@
   --destructive: #FF6B6B;
   --destructive-foreground: #121212;
   --border: #2D2D2D;
-  --input: #1C1C1C;
+  --input: #2D2D2D;
   --ring: #C6A75E;
   --chart-1: #C6A75E;
   --chart-2: #B8AFA3;
@@ -122,12 +122,18 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
 
   /* Luxury Typography */
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-serif font-semibold tracking-wide;
   }
 

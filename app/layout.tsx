@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import { Geist, Geist_Mono, Playfair_Display, Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
+import { Header } from '@/components/Header';
+import { Footer } from '@/components/Footer';
 
 const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
@@ -9,7 +11,7 @@ const _playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-serif
 const _inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
-  title: 'House of plore - The Art of Essentialism',
+  title: 'PLOUTÉON - The Art of Essentialism',
   description: 'Meticulously crafted objects designed to bring harmony and purpose to your daily rituals.',
   generator: 'v0.app',
   icons: {

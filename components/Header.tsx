@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { ShoppingCart, User, Search } from 'lucide-react'
 
 export function Header() {
@@ -7,15 +8,22 @@ export function Header() {
     <header className="fixed top-0 w-full bg-background z-50 border-b border-border">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-accent rounded flex items-center justify-center">
-            <span className="text-background font-bold text-lg">⬚</span>
-          </div>
-          <span className="text-2xl font-serif font-semibold tracking-wide text-foreground">House of plore</span>
+        <div className="flex items-center gap-3">
+          <Image
+            src="/logo.png"
+            alt="Plouteón"
+            width={48}
+            height={48}
+            className="h-12 w-auto"
+          />
+          <span className="text-2xl font-serif font-semibold tracking-wide text-foreground">Plouteón</span>
         </div>
 
         {/* Navigation */}
         <nav className="hidden md:flex items-center gap-8">
+          <a href="/" className="text-sm font-medium text-foreground hover:text-accent transition-colors tracking-wide">
+            HOME
+          </a>
           <a href="/collections" className="text-sm font-medium text-foreground hover:text-accent transition-colors tracking-wide">
             COLLECTIONS
           </a>
@@ -27,6 +35,9 @@ export function Header() {
           </a>
           <a href="#" className="text-sm font-medium text-foreground hover:text-accent transition-colors tracking-wide">
             JOURNAL
+          </a>
+          <a href="/dashboard" className="text-sm font-medium text-foreground hover:text-accent transition-colors tracking-wide">
+            DASHBOARD
           </a>
         </nav>
 

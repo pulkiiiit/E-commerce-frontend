@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { Facebook, Share2, Mail } from 'lucide-react';
 
 export function Footer() {
@@ -10,11 +11,15 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-5 gap-12 mb-12">
           {/* Brand Section */}
           <div className="md:col-span-1">
-            <div className="flex items-center gap-2 mb-6">
-              <div className="w-8 h-8 bg-accent rounded flex items-center justify-center">
-                <span className="text-background font-bold text-lg">⬚</span>
-              </div>
-              <span className="text-xl font-serif font-bold tracking-wide text-foreground">House of plore</span>
+            <div className="flex items-center gap-3 mb-6">
+              <Image
+                src="/logo.png"
+                alt="Plouteón"
+                width={48}
+                height={48}
+                className="h-12 w-auto"
+              />
+              <span className="text-xl font-serif font-bold tracking-wide text-foreground">Plouteón</span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed mb-6">
               The destination for modern minimalist essentials. We create and curate products that inspire a simpler, more meaningful life through pure design and ethical craftsmanship.
@@ -102,32 +107,32 @@ export function Footer() {
 
           {/* Support */}
           <div>
-            <h4 className="text-xs font-semibold tracking-widest text-gray-900 mb-6">
+            <h4 className="text-xs font-semibold tracking-widest text-foreground mb-6">
               SUPPORT
             </h4>
             <ul className="space-y-4">
               <li>
-                <a href="#" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
+                <a href="#" className="text-sm text-muted-foreground hover:text-accent transition-colors">
                   Care Instructions
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
+                <a href="#" className="text-sm text-muted-foreground hover:text-accent transition-colors">
                   Returns & Exchanges
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
+                <a href="#" className="text-sm text-muted-foreground hover:text-accent transition-colors">
                   Shipping Policy
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
+                <a href="#" className="text-sm text-muted-foreground hover:text-accent transition-colors">
                   Gift Cards
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
+                <a href="#" className="text-sm text-muted-foreground hover:text-accent transition-colors">
                   FAQ
                 </a>
               </li>
@@ -136,16 +141,16 @@ export function Footer() {
 
           {/* Visit Us */}
           <div>
-            <h4 className="text-xs font-semibold tracking-widest text-gray-900 mb-6">
+            <h4 className="text-xs font-semibold tracking-widest text-foreground mb-6">
               VISIT US
             </h4>
             <div className="space-y-4">
-              <div className="text-sm text-gray-600 leading-relaxed">
-                <p className="font-semibold text-gray-900">Concept Store</p>
+              <div className="text-sm text-muted-foreground leading-relaxed">
+                <p className="font-semibold text-foreground">Concept Store</p>
                 <p>142 Minimalist Way</p>
                 <p>San Francisco, CA 94103</p>
               </div>
-              <a href="#" className="inline-block text-sm font-semibold text-blue-600 hover:text-blue-700 transition-colors">
+              <a href="#" className="inline-block text-sm font-semibold text-accent hover:text-accent transition-colors">
                 Book a Consultation
               </a>
             </div>
@@ -154,19 +159,19 @@ export function Footer() {
       </div>
 
       {/* Bottom Footer */}
-      <div className="border-t border-gray-100 bg-gray-50">
+      <div className="border-t border-border bg-muted">
         <div className="max-w-7xl mx-auto px-4 md:px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-gray-500 tracking-widest">
-            © 2024 HOUSE OF PLORE. ALL RIGHTS RESERVED.
+          <p className="text-xs text-muted-foreground tracking-widest">
+            © 2024 PLOUTEÓN. ALL RIGHTS RESERVED.
           </p>
           <div className="flex items-center gap-8">
-            <a href="#" className="text-xs text-gray-500 hover:text-gray-700 transition-colors">
+            <a href="#" className="text-xs text-muted-foreground hover:text-accent transition-colors">
               TERMS OF SERVICE
             </a>
-            <a href="#" className="text-xs text-gray-500 hover:text-gray-700 transition-colors">
+            <a href="#" className="text-xs text-muted-foreground hover:text-accent transition-colors">
               PRIVACY POLICY
             </a>
-            <a href="#" className="text-xs text-gray-500 hover:text-gray-700 transition-colors">
+            <a href="#" className="text-xs text-muted-foreground hover:text-accent transition-colors">
               COOKIES
             </a>
           </div>

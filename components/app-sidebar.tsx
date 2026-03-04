@@ -42,29 +42,34 @@ const data = {
   navMain: [
     {
       title: "Dashboard",
-      url: "#",
+      url: "/dashboard",
       icon: IconDashboard,
     },
     {
-      title: "Lifecycle",
-      url: "#",
+      title: "Products",
+      url: "/dashboard/products",
       icon: IconListDetails,
     },
     {
-      title: "Analytics",
-      url: "#",
+      title: "Orders",
+      url: "/dashboard/orders",
       icon: IconChartBar,
     },
     {
-      title: "Projects",
-      url: "#",
+      title: "Customers",
+      url: "/dashboard/customers",
       icon: IconFolder,
     },
     {
-      title: "Team",
-      url: "#",
+      title: "Categories",
+      url: "/dashboard/categories",
       icon: IconUsers,
     },
+    {
+      title: "Refunds",
+      url: "/dashboard/refunds",
+      icon: IconUsers,
+    }
   ],
   navClouds: [
     {
@@ -162,15 +167,15 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
             >
               <a href="#">
                 <IconInnerShadowTop className="size-5!" />
-                <span className="text-base font-semibold">Acme Inc.</span>
+                <span className="text-base font-semibold">PLOUTÉON</span>
               </a>
             </SidebarMenuButton>
           </SidebarMenuItem>
         </SidebarMenu>
       </SidebarHeader>
-      <SidebarContent>
+      <SidebarContent className="gap-6">
         <NavMain items={data.navMain} />
-        <NavDocuments items={data.documents} />
+        {/* <NavDocuments items={data.documents} /> */}
         <NavSecondary items={data.navSecondary} className="mt-auto" />
       </SidebarContent>
       <SidebarFooter>
